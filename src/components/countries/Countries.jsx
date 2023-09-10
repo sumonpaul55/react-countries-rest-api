@@ -20,8 +20,8 @@ function Countries() {
                 <h2>Total Visitted Country {visittedCountries.length}</h2>
                 <ul>
                     {
-                        visittedCountries.map((visittedcountry)=>(
-                            <li key={visittedcountry.cca2}>{visittedcountry.name.common}</li>
+                        visittedCountries.map((visittedcountry,idx)=>(
+                            <li key={idx}>{visittedcountry.name.common}</li>
                         ))
                         
                     }
